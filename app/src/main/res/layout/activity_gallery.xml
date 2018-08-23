@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tvStakeName"
+            android:layout_width="232dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/et_styleblack"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorPrimary" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:text="Format"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tvFormat"
+                android:layout_width="116dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="center|center_vertical"
+                android:text="SingleScore"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:text="Score"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etSingleScore"
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Number"
+                android:inputType="number"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etScoreScore1"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Number"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="25dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:backgroundTint="@color/colorGrey"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etScoreScore2"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Number"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Put winning score on left"
+            android:visibility="gone"
+            android:textColor="@color/colorGrey" />
+
+        <TextView
+            android:id="@+id/tvSpace"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:ems="10" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:text="Participants"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tvParticipants"
+                android:layout_width="232dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:textColor="@color/colorAccent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:text="Winner"
+                android:textColor="@color/colorAccent" />
+
+            <Spinner
+                android:id="@+id/spnWinner"
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/et_style"
+                android:textColor="@color/colorAccent" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPartNonexistent"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:gravity="center"
+            android:text="This participant does not exist."
+            android:visibility="gone"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/tvSpace2"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:gravity="center" />
+
+
+        <Button
+            android:id="@+id/btnSubmitStake"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_style"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="170dp"
+            app:srcCompat="@drawable/home" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
