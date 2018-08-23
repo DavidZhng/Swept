@@ -18,7 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class StakeViewHolder extends RecyclerView.ViewHolder {
 
-    public TextView tvStakeName, tvFormat, tvCreator, tvParticipants, tvStatus, tvReward;
+    public TextView tvStakeName, tvFormat, tvCreator, tvParticipants, tvStatus, tvReward, tvStatusLight;
     public Button btnEnterStake,btnConfigStake, btnView;
 
 
@@ -35,6 +35,7 @@ public class StakeViewHolder extends RecyclerView.ViewHolder {
         btnEnterStake = itemView.findViewById(R.id.btnEnterStake);
         btnConfigStake = itemView.findViewById(R.id.btnConfigStake);
         btnView = itemView.findViewById(R.id.btnView);
+        tvStatusLight = itemView.findViewById(R.id.tvStatusLight);
 
 
 

@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
@@ -83,12 +84,14 @@ public class StakeAdapter extends RecyclerView.Adapter<StakeViewHolder> {
             public void onClick(View view) {
                 if(holder.tvStatus.getText().toString().equals("Closed")){
                     Toast.makeText(mainActivity.getBaseContext(), "Entries for this stake have been closed.", Toast.LENGTH_SHORT).show();
+
                 }
                 if(holder.tvStatus.getText().toString().equals("Finished")){
                     Toast.makeText(mainActivity.getBaseContext(), "This stake has been finished.Check results now!", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     enterStake(position);
+
                 }
             }
 
@@ -122,15 +125,18 @@ public class StakeAdapter extends RecyclerView.Adapter<StakeViewHolder> {
             }
         });
         Log.d("Stakeadapter","second");
-
+        System.out.println(holder.tvStakeName.getText().toString() + holder.tvStatus.getText().toString());
         if( holder.tvStatus.getText().toString().equals("Closed")){
             holder.tvStatus.setTextColor(Color.RED);
+            holder.tvStatusLight.setBackground(ContextCompat.getDrawable(mainActivity.getBaseContext(), R.drawable.et_stylered));
         }
         if( holder.tvStatus.getText().toString().equals("Finished")){
             holder.tvStatus.setTextColor(Color.GRAY);
+            holder.tvStatusLight.setBackground(ContextCompat.getDrawable(mainActivity.getBaseContext(), R.drawable.et_stylegray));
         }
-        else{
+        if( holder.tvStatus.getText().toString().equals("Ongoing")){
             holder.tvStatus.setTextColor(Color.GREEN);
+            holder.tvStatusLight.setBackground(ContextCompat.getDrawable(mainActivity.getBaseContext(), R.drawable.et_stylegreen));
         }
 
     }
