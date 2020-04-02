@@ -33,7 +33,6 @@ public class LoadingActivity extends AppCompatActivity {
 
     FirebaseDatabase fDatabase;
     FirebaseUser user;
-    DatabaseReference fRef;
     FirebaseFirestore fStore = FirebaseFirestore.getInstance();
     DocumentReference fDoc;
 
@@ -57,6 +56,7 @@ public class LoadingActivity extends AppCompatActivity {
                             .setAvailableProviders(providers)
                             .setLogo(R.drawable.actualswept)
                             .setTheme(R.style.AppTheme)
+
                             .build(),
                     RC_SIGN_IN);
 
@@ -119,20 +119,6 @@ public class LoadingActivity extends AppCompatActivity {
 
                 });
 
-
-
-                        // The user is new, show them a fancy intro screen!
-
-
-
-                        // This is an existing user, show them a welcome back screen.
-
-
-
-
-
-
-                    // ...
                 }
                 else {
                     List<AuthUI.IdpConfig> providers = Arrays.asList(
@@ -148,10 +134,7 @@ public class LoadingActivity extends AppCompatActivity {
                                     .setTheme(R.style.AppTheme)
                                     .build(),
                             RC_SIGN_IN);
-                    // Sign in failed. If response is null the user canceled the
-                    // sign-in flow using the back button. Otherwise check
-                    // response.getError().getErrorCode() and handle the error.
-                    // ...
+
                 }
             }
         }

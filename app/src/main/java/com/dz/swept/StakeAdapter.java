@@ -89,7 +89,7 @@ public class StakeAdapter extends RecyclerView.Adapter<StakeViewHolder> {
                 if(holder.tvStatus.getText().toString().equals("Finished")){
                     Toast.makeText(mainActivity.getBaseContext(), "This stake has been finished.Check results now!", Toast.LENGTH_SHORT).show();
                 }
-                else{
+                if(holder.tvStatus.getText().toString().equals("Ongoing")){
                     enterStake(position);
 
                 }
